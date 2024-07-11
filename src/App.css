@@ -27,6 +27,12 @@
 
 .card:hover {
   transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(8, 8, 8, 0.2);
+}
+
+.card:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .board {
@@ -48,6 +54,7 @@
   width: 50px;
   height: 50px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(8, 8, 8, 0.4);
 }
 
 p {
