@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./Header";
 import Deck from "./Deck";
 import Board from "./Board";
+import DisplayButton from "./Display-button";
 
 function App() {
   const [points, setPoints] = useState([]);
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <Deck onSelect={handleSelect} />
       <Board points={points} />
+      <DisplayButton />
     </div>
   );
 }
