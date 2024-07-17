@@ -14,7 +14,7 @@
   flex-wrap: wrap;
   margin-top: 20px;
 }
-
+/* 
 .card {
   background-color: #95dff3;
   padding: 20px;
@@ -59,8 +59,119 @@
 
 p {
   margin: 5px;
+} */
+
+
+
+.App {
+  text-align: center;
 }
 
-.display-button {
-  margin-top: 10px;
+.App-header {
+  background-color: #011d55;
+  padding: 20px;
+  color: white;
+}
+
+.deck {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #95dff3;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 30px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(8, 8, 8, 0.2);
+}
+
+.card:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.board_card {
+  background-color: #95dff3;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 30px;
+  transition: transform 0.2s;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(8, 8, 8, 0.4);
+}
+
+p {
+  margin: 5px;
+}
+
+.board-card {
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.board-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg); /* Start with the back side */
+}
+
+.board-card.flipped .board-card-inner {
+  transform: rotateY(180deg); /* Flip to show the front side */
+}
+
+.board-card-front,
+.board-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+.board-card-front {
+  background-color: #007bff;
+  transform: rotateY(180deg); /* Flip front side to be initially hidden */
+}
+
+.board-card-back {
+  background-color: #28a745;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.board_card {
+  cursor: pointer;
 }
