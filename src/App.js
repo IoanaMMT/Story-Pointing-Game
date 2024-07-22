@@ -7,7 +7,7 @@ import DisplayButton from "./Display-button";
 
 function App() {
   const [points, setPoints] = useState([]);
-  const [display, setDisplay] = useState(false);
+  const [display, setDisplay] = useState(true);
 
   const handleSelect = (point) => {
     setPoints([...points, point]);
