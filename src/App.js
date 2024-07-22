@@ -5,25 +5,6 @@ import Deck from "./Deck";
 import Board from "./Board";
 import DisplayButton from "./Display-button";
 
-// function App() {
-//   const [points, setPoints] = useState([]);
-
-//   const handleSelect = (point) => {
-//     setPoints([...points, point]);
-//   };
-
-//   return (
-//     <div className="App">
-//       <Header />
-//       <Deck onSelect={handleSelect} />
-//       <Board points={points} />
-//       <DisplayButton />
-//     </div>
-//   );
-// }
-
-// export default App;
-
 function App() {
   const [points, setPoints] = useState([]);
   const [display, setDisplay] = useState(false);
