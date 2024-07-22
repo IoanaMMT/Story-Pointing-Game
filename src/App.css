@@ -4,7 +4,7 @@
 
 .App-header {
   background-color: #011d55;
-  padding: 20px;
+  padding: 10px;
   color: white;
 }
 
@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .card {
@@ -74,6 +74,7 @@
   align-items: center;
   font-size: 24px;
   color: #fff;
+  border-radius: 5px;
 }
 
 .board-card-front {
