@@ -24,15 +24,17 @@ function App() {
     <div className="App">
       <Header />
       {!isNameEntered ? (
-        <form onSubmit={handleNameSubmit}>
-          <input
-            type="text"
-            placeholder="Enter your name"
-            value={playerName}
-            onChange={(e) => setPlayerName(e.target.value)}
-          />
-          <button type="submit">Join Game</button>
-        </form>
+        <div className="entry-form">
+          <form onSubmit={handleNameSubmit}>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              value={playerName}
+              onChange={(e) => setPlayerName(e.target.value)}
+            />
+            <button type="submit">Join Game</button>
+          </form>
+        </div>
       ) : (
         <>
           <Deck onSelect={handleSelect} />

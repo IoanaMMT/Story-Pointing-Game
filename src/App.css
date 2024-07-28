@@ -15,6 +15,14 @@
   margin-top: 10px;
 }
 
+.entry-form {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .card {
   background-color: #95dff3;
   padding: 20px;
