@@ -32,7 +32,7 @@ function App() {
               value={playerName}
               onChange={(e) => setPlayerName(e.target.value)}
             />
-            <button type="submit">Join Game</button>
+            <button type="submit">Join</button>
           </form>
         </div>
       ) : (

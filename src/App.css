@@ -16,11 +16,49 @@
 }
 
 .entry-form {
-  margin-top: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh; /* Center vertically */
+  background-color: #f0f0f0; /* Optional: Background color */
+}
 
+.entry-form form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff; /* Background color of the form */
+  padding: 30px; /* Padding around the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Box shadow */
+  width: 400px; /* Width of the form */
+  gap: 20px;
+  margin-top: -200px;
+}
+
+.entry-form input {
+  width: 100%; /* Full width of the input */
+  padding: 10px; /* Padding inside the input */
+  margin-bottom: 10px; /* Space between input and button */
+  border: 1px solid #ccc; /* Border of the input */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 17px; /* Font size */
+}
+
+.entry-form button {
+  width: 50%; /* Full width of the button */
+  padding: 10px; /* Padding inside the button */
+  background-color: #007bff; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-bottom: 8px;
+}
+
+.entry-form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
 .card {
