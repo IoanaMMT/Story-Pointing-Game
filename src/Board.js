@@ -7,11 +7,14 @@ const Board = ({ points, display }) => {
       <h2>Selected Points:</h2>
       {points.map((point, index) => (
         <div className="board_card" key={index}>
-          <BoardCard
-            backContent={<p>Back Side</p>}
-            frontContent={<p>{point}</p>}
-            flipped={display}
-          />
+          <div className="card-with-name">
+            <p className="player-name">{point.playerName}</p>
+            <BoardCard
+              backContent={<p>Back Side</p>}
+              frontContent={<p>{point.value}</p>}
+              flipped={display}
+            />
+          </div>
         </div>
       ))}
     </div>

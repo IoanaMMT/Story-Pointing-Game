@@ -85,3 +85,14 @@
 .board-card-back {
   background-color: #28a745;
 }
+
+.card-with-name {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the gap as needed */
+}
+
+.player-name {
+  font-size: 18px;
+  color: #333;
+}

@@ -8,17 +8,38 @@ import DisplayButton from "./Display-button";
 function App() {
   const [points, setPoints] = useState([]);
   const [display, setDisplay] = useState(true);
+  const [playerName, setPlayerName] = useState("");
+  const [isNameEntered, setIsNameEntered] = useState(false);
 
-  const handleSelect = (point) => {
-    setPoints([...points, point]);
+  const handleSelect = (value) => {
+    setPoints([...points, { value, playerName }]);
+  };
+
+  const handleNameSubmit = (e) => {
+    e.preventDefault();
+    setIsNameEntered(true);
   };
 
   return (
     <div className="App">
       <Header />
-      <Deck onSelect={handleSelect} />
-      <Board points={points} display={display} />
-      <DisplayButton setDisplay={setDisplay} />
+      {!isNameEntered ? (
+        <form onSubmit={handleNameSubmit}>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            value={playerName}
+            onChange={(e) => setPlayerName(e.target.value)}
+          />
+          <button type="submit">Join Game</button>
+        </form>
+      ) : (
+        <>
+          <Deck onSelect={handleSelect} />
+          <Board points={points} display={display} />
+          <DisplayButton setDisplay={setDisplay} />
+        </>
+      )}
     </div>
   );
 }
