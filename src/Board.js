@@ -1,5 +1,8 @@
+// Board.js
 import React from "react";
 import BoardCard from "./Board-card";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Board = ({ points, display }) => {
   return (
@@ -10,7 +13,9 @@ const Board = ({ points, display }) => {
           <div className="card-with-name">
             <p className="player-name">{point.playerName}</p>
             <BoardCard
-              backContent={<p>Back Side</p>}
+              backContent={
+                <FontAwesomeIcon icon={faQuestionCircle} size="3x" />
+              }
               frontContent={<p>{point.value}</p>}
               flipped={display}
             />
