@@ -3,6 +3,7 @@ import React from "react";
 import BoardCard from "./Board-card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+import { faChessQueen } from "@fortawesome/free-solid-svg-icons/faChessQueen";
 
 const Board = ({ points, display }) => {
   return (
@@ -13,9 +14,7 @@ const Board = ({ points, display }) => {
           <div className="card-with-name">
             <p className="player-name">{point.playerName}</p>
             <BoardCard
-              backContent={
-                <FontAwesomeIcon icon={faQuestionCircle} size="3x" />
-              }
+              backContent={<FontAwesomeIcon icon={faChessQueen} />}
               frontContent={<p>{point.value}</p>}
               flipped={display}
             />
