@@ -129,7 +129,7 @@
 }
 
 .board-card-back {
-  background-color: #28a745;
+  background-color: #59c6e4;
 }
 
 .card-with-name {
@@ -139,6 +139,7 @@
 }
 
 .player-name {
-  font-size: 18px;
+  font-size: 24px;
   color: #333;
+  font-weight: 600;
 }
