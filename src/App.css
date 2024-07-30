@@ -111,6 +111,7 @@
 
 .board-card-front,
 .board-card-back {
+  
   position: absolute;
   width: 100%;
   height: 100%;
@@ -135,11 +136,14 @@
 .card-with-name {
   display: flex;
   align-items: center;
-  gap: 10px; /* Adjust the gap as needed */
+  gap: 10px;
+  margin-right: 70px;
+  padding-right: 10rem;
 }
 
 .player-name {
   font-size: 24px;
   color: #333;
   font-weight: 600;
+  padding-right: 100px;
 }
