@@ -48,7 +48,7 @@
 .entry-form button {
   width: 50%; /* Full width of the button */
   padding: 10px; /* Padding inside the button */
-  background-color: #007bff; /* Button background color */
+  background-color: #0056b3; /* Button background color */
   color: #ffffff; /* Button text color */
   border: none; /* No border */
   border-radius: 4px; /* Rounded corners */
@@ -58,11 +58,11 @@
 }
 
 .entry-form button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #011d55; /* Darker blue on hover */
 }
 
 .card {
-  background-color: #95dff3;
+  background-color: #59c6e4;
   padding: 20px;
   margin: 10px;
   border-radius: 5px;
@@ -125,7 +125,7 @@
 }
 
 .board-card-front {
-  background-color: #007bff;
+  background-color: #59c6e4;
   transform: rotateY(180deg); /* Flip front side to be initially hidden */
 }
 
@@ -138,7 +138,7 @@
   align-items: center;
   gap: 10px;
   margin-right: 70px;
-  padding-right: 10rem;
+  padding-right: 8rem;
 }
 
 .player-name {
