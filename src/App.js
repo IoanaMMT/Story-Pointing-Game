@@ -39,7 +39,7 @@ function App() {
         <>
           <Deck onSelect={handleSelect} />
           <Board points={points} display={display} />
-          <DisplayButton setDisplay={setDisplay} />
+          <DisplayButton setDisplay={setDisplay} display={display} />
         </>
       )}
     </div>
