@@ -1,4 +1,3 @@
-// Board.js
 import React from "react";
 import BoardCard from "./Board-card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

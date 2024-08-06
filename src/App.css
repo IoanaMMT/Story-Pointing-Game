@@ -19,19 +19,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Center vertically */
-  background-color: #f0f0f0; /* Optional: Background color */
+  height: 100vh; 
+  background-color: #f0f0f0; 
 }
 
 .entry-form form {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #ffffff; /* Background color of the form */
-  padding: 30px; /* Padding around the form */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Box shadow */
-  width: 400px; /* Width of the form */
+  background-color: #ffffff; 
+  padding: 30px; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 400px; 
   gap: 20px;
   margin-top: -200px;
 }
@@ -85,9 +85,9 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 15px; /* Add gap between cards */
-  justify-content: center; /* Center the cards */
-  align-items: center; /* Center the cards */
+  gap: 15px; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 .board-card {
