@@ -37,28 +37,28 @@
 }
 
 .entry-form input {
-  width: 100%; /* Full width of the input */
-  padding: 10px; /* Padding inside the input */
-  margin-bottom: 10px; /* Space between input and button */
-  border: 1px solid #ccc; /* Border of the input */
-  border-radius: 4px; /* Rounded corners */
-  font-size: 17px; /* Font size */
+  width: 100%; 
+  padding: 10px; 
+  margin-bottom: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  font-size: 17px; 
 }
 
 .entry-form button {
-  width: 50%; /* Full width of the button */
-  padding: 10px; /* Padding inside the button */
-  background-color: #0056b3; /* Button background color */
-  color: #ffffff; /* Button text color */
-  border: none; /* No border */
-  border-radius: 4px; /* Rounded corners */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Pointer cursor on hover */
+  width: 50%; 
+  padding: 10px; 
+  background-color: #0056b3; 
+  color: #ffffff; 
+  border: none; 
+  border-radius: 4px; 
+  font-size: 16px; 
+  cursor: pointer; 
   margin-bottom: 8px;
 }
 
 .entry-form button:hover {
-  background-color: #011d55; /* Darker blue on hover */
+  background-color: #011d55; 
 }
 
 .card {
@@ -102,11 +102,11 @@
   position: relative;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  transform: rotateY(180deg); /* Start with the back side */
+  transform: rotateY(180deg); 
 }
 
 .board-card.flipped .board-card-inner {
-  transform: rotateY(0deg); /* Flip to show the front side */
+  transform: rotateY(0deg); 
 }
 
 .board-card-front,
@@ -126,7 +126,7 @@
 
 .board-card-front {
   background-color: #59c6e4;
-  transform: rotateY(180deg); /* Flip front side to be initially hidden */
+  transform: rotateY(180deg); 
 }
 
 .board-card-back {
