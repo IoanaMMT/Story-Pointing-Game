@@ -44,13 +44,10 @@ function App() {
         <>
           <Deck onSelect={handleSelect} />
           <Board points={points} display={display} />
-          <DisplayButton
-            className="buttons"
-            setDisplay={setDisplay}
-            display={display}
-          />
-          <ClearButton className="buttons" handleClear={handleClear} />{" "}
-          {/* Add the Clear button */}
+          <div className="buttons-container">
+            <DisplayButton setDisplay={setDisplay} display={display} />
+            <ClearButton handleClear={handleClear} />
+          </div>
         </>
       )}
     </div>

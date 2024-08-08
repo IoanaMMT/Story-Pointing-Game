@@ -148,3 +148,9 @@
   padding-right: 100px;
 }
 
+.buttons-container {
+  display: flex;
+  align-items:baseline;
+  justify-content: center;
+  gap: 35px;
+}

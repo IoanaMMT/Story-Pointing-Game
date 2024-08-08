@@ -6,7 +6,7 @@ const ClearButton = ({ handleClear }) => {
     <Button
       variant="contained"
       className="clear-button"
-      style={{ marginTop: "10px", backgroundColor: "#b30000" }}
+      style={{ marginTop: "10px", backgroundColor: "#b60000" }}
       onClick={handleClear}
     >
       Clear
