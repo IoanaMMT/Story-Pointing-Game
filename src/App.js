@@ -4,6 +4,7 @@ import Header from "./Header";
 import Deck from "./Deck";
 import Board from "./Board";
 import DisplayButton from "./Display-button";
+import ClearButton from "./Clear-button";
 
 function App() {
   const [points, setPoints] = useState([]);
@@ -18,6 +19,10 @@ function App() {
   const handleNameSubmit = (e) => {
     e.preventDefault();
     setIsNameEntered(true);
+  };
+
+  const handleClear = () => {
+    setPoints(points.map((point) => ({ ...point, value: null })));
   };
 
   return (
@@ -39,7 +44,13 @@ function App() {
         <>
           <Deck onSelect={handleSelect} />
           <Board points={points} display={display} />
-          <DisplayButton setDisplay={setDisplay} display={display} />
+          <DisplayButton
+            className="buttons"
+            setDisplay={setDisplay}
+            display={display}
+          />
+          <ClearButton className="buttons" handleClear={handleClear} />{" "}
+          {/* Add the Clear button */}
         </>
       )}
     </div>

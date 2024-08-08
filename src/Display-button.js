@@ -20,26 +20,3 @@ const DisplayButton = ({ setDisplay, display }) => {
 };
 
 export default DisplayButton;
-
-// fdghjbbbbbbbbbbbbbbbbbbbbbb
-
-// const DisplayButton = ({ setDisplay, display }) => {
-//   use Effect(() => {
-//     const handleClick = () => {
-//       setDisplay((prev) => !prev);
-//     };
-//   },[display]);
-
-//   return (
-//     <Button
-//       variant="contained"
-//       className="display-button"
-//       style={{ marginTop: "45px", backgroundColor: "#011d55" }}
-//       onClick={handleClick}
-//     >
-//       {display ? "Display" : "Hide"}
-//     </Button>
-//   );
-// };
-
-// export default DisplayButton;
