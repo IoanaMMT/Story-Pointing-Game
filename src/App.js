@@ -23,6 +23,7 @@ function App() {
 
   const handleClear = () => {
     setPoints([]);
+    setDisplay(true);
   };
 
   return (
