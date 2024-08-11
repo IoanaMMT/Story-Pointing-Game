@@ -22,7 +22,7 @@ function App() {
   };
 
   const handleClear = () => {
-    setPoints(points.map((point) => ({ ...point, value: null })));
+    setPoints([]);
   };
 
   return (
