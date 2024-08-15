@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Story-Pointing-Game/static/css/main.ce8e21d5.css",
+    "main.js": "/Story-Pointing-Game/static/js/main.979ae00c.js",
+    "static/js/453.b28655ae.chunk.js": "/Story-Pointing-Game/static/js/453.b28655ae.chunk.js",
+    "index.html": "/Story-Pointing-Game/index.html",
+    "main.ce8e21d5.css.map": "/Story-Pointing-Game/static/css/main.ce8e21d5.css.map",
+    "main.979ae00c.js.map": "/Story-Pointing-Game/static/js/main.979ae00c.js.map",
+    "453.b28655ae.chunk.js.map": "/Story-Pointing-Game/static/js/453.b28655ae.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce8e21d5.css",
+    "static/js/main.979ae00c.js"
+  ]
+}
