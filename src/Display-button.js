@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "@mui/material/Button";
-import BoardCard from "./Board-card";
+// import BoardCard from "./Board-card";
 
 const DisplayButton = ({ setDisplay, display }) => {
   const handleClick = () => {

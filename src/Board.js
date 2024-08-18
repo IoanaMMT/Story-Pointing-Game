@@ -1,7 +1,7 @@
 import React from "react";
 import BoardCard from "./Board-card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+// import { faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
 import { faChessQueen } from "@fortawesome/free-solid-svg-icons/faChessQueen";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
