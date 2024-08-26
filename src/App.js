@@ -14,7 +14,7 @@ function App() {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const ws = new WebSocket("ws://story-pointing-game.vercel.app");
+    const ws = new WebSocket("ws://story-pointing-game.vercel.app:8080");
 
     ws.onopen = () => {
       console.log("Connected to WebSocket server");
