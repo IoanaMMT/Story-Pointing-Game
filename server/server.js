@@ -1,7 +1,8 @@
 const WebSocket = require("ws");
 
 // Set up the WebSocket server on port 8080
-const wss = new WebSocket.Server({ port: 8080 });
+const PORT = process.env.PORT || 8080;
+const wss = new WebSocket.Server({ port: PORT });
 
 wss.on("connection", (ws) => {
   console.log("A new client connected.");
