@@ -14,7 +14,7 @@ function App() {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const ws = new WebSocket("ws://localhost:8080");
+    const ws = new WebSocket(process.env.REACT_APP_WS_URL || "ws://:8080");
 
     ws.onopen = () => {
       console.log("Connected to WebSocket server");
