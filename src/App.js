@@ -16,7 +16,7 @@ function App() {
   //Connecting with the server
 
   useEffect(() => {
-    const ws = new WebSocket("ws://localhost:8080");
+    const ws = new WebSocket("wss://<Story-Pointing-Game>.up.railway.app");
 
     ws.onopen = () => {
       console.log("Connected to WebSocket server");
