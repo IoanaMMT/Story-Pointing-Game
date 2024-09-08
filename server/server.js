@@ -14,6 +14,10 @@ wss.on("connection", (ws) => {
   });
   ws.send(welcomeMessage);
 
+  wss.on("error", (error) => {
+    console.error("WebSocket server error:", error);
+  });
+
   // Broadcast to all clients when a new message is received
   ws.on("message", (message) => {
     const jsonMessage = JSON.stringify({ type: "message", content: message });
